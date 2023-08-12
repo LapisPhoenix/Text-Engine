@@ -1,4 +1,4 @@
-![banner](assets/banner.png)
+![banner](../../assets/banner.png)
 ![version](https://img.shields.io/badge/Version-1.0.0-blue) ![pure python](https://img.shields.io/badge/Pure%20Python-True-yellow)
 
 # Text Engine
