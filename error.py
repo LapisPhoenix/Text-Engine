@@ -1,6 +1,12 @@
 class AddedTooManyItems(Exception):
-	pass
+    """
+    Custom exception raised when attempting to add too many items to a container.
+    """
+    pass
 
 
 class NotAnItem(Exception):
-	pass
+    """
+    Custom exception raised when an operation is performed on a non-item object.
+    """
+    pass
