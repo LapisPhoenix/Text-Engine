@@ -1,4 +1,4 @@
-from misc import Text
+from text import Text
 
 
 class Entity:
@@ -107,7 +107,7 @@ class Entity:
 
 
 class Person(Entity):
-	def __init__(self, name: str, health: int, armor: int, description: str, text_color: tuple[int, int, int]):
+	def __init__(self, name: str, description: str, text_color: tuple[int, int, int], health: int, armor: int, inventory_size: int = 16):
 		"""
 		Represents a human-like game character with additional text features.
 		:param name: The name of the person.
@@ -119,6 +119,8 @@ class Person(Entity):
 		super().__init__("Human", health, armor, description)
 		self.name = name
 		self.text_handler = Text(text_color)
+		self.inventory_size = inventory_size
+		self.inventory_stack = []   # List of all the items currently in the inventory
 	
 	def say(self, message: str):
 		"""
